@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>London Metropolitan University</title>
+</head>
+<body>
+    <!-- Nav-bar Section -->
+    <div class="nav-container">
+        <div class="nav-left">
+            <!-- this is a svg of phone-icon used in left side of nav-bar -->
+            <svg id="phone-icon" xmlns="http://www.w3.org/2000/svg" width="23.572" height="23.617" viewBox="0 0 23.572 23.617">
+                <path id="Icon_feather-phone-call" data-name="Icon feather-phone-call" d="M17.768,6.014a5.642,5.642,0,0,1,4.457,4.457M17.768,1.5a10.156,10.156,0,0,1,8.971,8.96m-1.128,9.005v3.385a2.257,2.257,0,0,1-2.46,2.257,22.332,22.332,0,0,1-9.739-3.464,22.005,22.005,0,0,1-6.771-6.771A22.332,22.332,0,0,1,3.177,5.089a2.257,2.257,0,0,1,2.246-2.46H8.808a2.257,2.257,0,0,1,2.257,1.941,14.489,14.489,0,0,0,.79,3.171,2.257,2.257,0,0,1-.508,2.381L9.914,11.555a18.056,18.056,0,0,0,6.771,6.771l1.433-1.433a2.257,2.257,0,0,1,2.381-.508,14.49,14.49,0,0,0,3.171.79A2.257,2.257,0,0,1,25.611,19.465Z" transform="translate(-3.168 -1.5)" fill="#fff"/>
+              </svg>
+              <p style="padding-right: 20px;">+9779814312920</p>
+              <!-- This is a message-icon svg used in left side of nav-bar -->
+              <svg id="message-icon" xmlns="http://www.w3.org/2000/svg" width="33.835" height="23.424" viewBox="0 0 33.835 23.424">
+                <g id="Group_42" data-name="Group 42" transform="translate(-455.428 -28.288)">
+                  <path id="Path_1" data-name="Path 1" d="M36.934,10.364l-8.752,8.914a.157.157,0,0,0,0,.228l6.124,6.523a1.055,1.055,0,0,1,0,1.5,1.06,1.06,0,0,1-1.5,0l-6.1-6.5a.167.167,0,0,0-.236,0L24.986,22.54a6.549,6.549,0,0,1-4.669,1.968,6.68,6.68,0,0,1-4.766-2.025l-1.431-1.456a.167.167,0,0,0-.236,0l-6.1,6.5a1.06,1.06,0,0,1-1.5,0,1.055,1.055,0,0,1,0-1.5l6.124-6.523a.173.173,0,0,0,0-.228l-8.76-8.914a.16.16,0,0,0-.277.114V28.314a2.61,2.61,0,0,0,2.6,2.6h28.63a2.61,2.61,0,0,0,2.6-2.6V10.478A.163.163,0,0,0,36.934,10.364Z" transform="translate(452.053 20.795)" fill="#fff"/>
+                  <path id="Path_2" data-name="Path 2" d="M20.159,22.767a4.422,4.422,0,0,0,3.18-1.334L36.1,8.444a2.556,2.556,0,0,0-1.61-.569H5.836a2.539,2.539,0,0,0-1.61.569L16.987,21.433A4.422,4.422,0,0,0,20.159,22.767Z" transform="translate(452.187 20.413)" fill="#fff"/>
+                </g>
+              </svg>
+              <p style="padding-left: 10px; padding-right: 20px;">londonmet.ac.uk</p>              
+        </div>
+
+        <div class="nav-right">
+            <!-- vertical line one -->
+            <div class="vertical-line"></div>
+            <!-- This is a svg icon of fee payment icon used in right side of nav-bar -->
+            <svg id="fee-payment" xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+                <path id="Icon_material-payment" data-name="Icon material-payment" d="M30,6H6A2.977,2.977,0,0,0,3.015,9L3,27a2.99,2.99,0,0,0,3,3H30a2.99,2.99,0,0,0,3-3V9A2.99,2.99,0,0,0,30,6Zm0,21H6V18H30Zm0-15H6V9H30Z" transform="translate(-3 -6)" fill="#fff"/>
+              </svg>
+            <p style="padding-right: 20px;">Fee Payment</p>
+            <!-- vertical line two -->
+            <div class="vertical-line-two"></div>          
+            <!-- This is a svg icon of online admission used in right side of nav-bar -->
+            <svg id="online-admission" xmlns="http://www.w3.org/2000/svg" width="29.838" height="25.667" viewBox="0 0 29.838 25.667">
+                <path id="Icon_awesome-cash-register" data-name="Icon awesome-cash-register" d="M29.784,18.989l-1.556-8.021A1.807,1.807,0,0,0,26.386,9.63H12.12V6.422h5.594a.877.877,0,0,0,.932-.8V.8a.877.877,0,0,0-.932-.8H2.8a.877.877,0,0,0-.932.8V5.615a.877.877,0,0,0,.932.8H8.391V9.625H3.443A1.812,1.812,0,0,0,1.6,10.963L.045,18.984a2.687,2.687,0,0,0-.052.526v4.552a1.747,1.747,0,0,0,1.865,1.6H27.965a1.747,1.747,0,0,0,1.865-1.6V19.516A2.3,2.3,0,0,0,29.784,18.989ZM16.316,12.432a.877.877,0,0,1,.932-.8h.932a.877.877,0,0,1,.932.8v.8a.877.877,0,0,1-.932.8h-.932a.877.877,0,0,1-.932-.8Zm-1.865,3.208h.932a.877.877,0,0,1,.932.8v.8a.877.877,0,0,1-.932.8h-.932a.877.877,0,0,1-.932-.8v-.8A.877.877,0,0,1,14.451,15.641Zm-1.865-4.01a.877.877,0,0,1,.932.8v.8a.877.877,0,0,1-.932.8h-.932a.877.877,0,0,1-.932-.8v-.8a.877.877,0,0,1,.932-.8ZM4.661,4.01v-1.6H15.85v1.6ZM6.992,14.036H6.059a.877.877,0,0,1-.932-.8v-.8a.877.877,0,0,1,.932-.8h.932a.877.877,0,0,1,.932.8v.8A.877.877,0,0,1,6.992,14.036Zm.932,3.208v-.8a.877.877,0,0,1,.932-.8h.932a.877.877,0,0,1,.932.8v.8a.877.877,0,0,1-.932.8H8.857A.877.877,0,0,1,7.924,17.245Zm12.588,5.615a.439.439,0,0,1-.466.4H9.789a.439.439,0,0,1-.466-.4v-.8a.439.439,0,0,1,.466-.4H20.046a.439.439,0,0,1,.466.4Zm1.4-5.615a.877.877,0,0,1-.932.8h-.932a.877.877,0,0,1-.932-.8v-.8a.877.877,0,0,1,.932-.8h.932a.877.877,0,0,1,.932.8Zm2.8-4.01a.877.877,0,0,1-.932.8h-.932a.877.877,0,0,1-.932-.8v-.8a.877.877,0,0,1,.932-.8h.932a.877.877,0,0,1,.932.8Z" transform="translate(0.007)" fill="#fff"/>
+              </svg>
+            <p style="padding-right: 20px;">Online Admission</p>  
+            <!-- vertical line three -->
+            <div class="vertical-line-three"></div>
+            <!-- This is a svg icon of login used in right side of nav-bar -->
+            <svg id="login-icon" xmlns="http://www.w3.org/2000/svg" width="26.771" height="23.424" viewBox="0 0 26.771 23.424">
+                <path id="Icon_open-account-login" data-name="Icon open-account-login" d="M10.039,0V3.346H23.424V20.078H10.039v3.346H26.771V0Zm3.346,6.693v3.346H0v3.346H13.385v3.346l6.693-5.019Z" fill="#fff"/>
+              </svg>
+            <p style="color: #BA5F00;">Login</p>              
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <div class="menu-container">
+        <div class="menu-left">
+            <!-- This is a svg icon of london met used in left-side of menu bar -->
+            <img src="assets/londonmetro_icon.png" alt="london metropolitan icon">
+            <div class="menu-left-desc">
+                <p><h2 id="met" style="color: #BA5F00; text-decoration: underline;">London Metropolitan University</h2><br><h2 id="international-college" style="color: #7a7e88;">The International College</h2></p>
+            </div>          
+        </div>
+
+        <div class="menu-right">
+            <ul>
+                <li><h2><a href="#">Home</a></h2></li>
+                <li><h2><a href="#about">About Us</a></h2></li>
+                <li><h2><a href="#events">Gallery</a></h2></li>
+                <li><h2><a href="#footer">Contact Us</a></h2></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Background of london met Section -->
+    <div class="background">
+        <img src="assets/londonmet-background.png" alt="image of london met" width="100%">
+        <h1 id="london">The London Metropolitan University <br><span id="uk">United Kingdom</span></h1>
+        <div class="greenbar">
+            <p id="green-bar">University Temporary Closed Due To Covid-19, Open University in 2021, Informed By The Manager: <span style="color:tomato;">Bikal Dhimal</span> </p>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-container" id="about">
+        <div class="about-left">
+            <img src="assets/about-image.png" alt="teacher and students at library">
+        </div>
+
+        <div class="about-right">
+            <h3>About Us</h3>
+            <h2>We are one of the best place to explore and learn with fun</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti incidunt tempore molestias. Molestiae, dolorum! Voluptatem dolore, reprehenderit harum iste veritatis tenetur incidunt ipsam iusto necessitatibus, quidem vel consectetur accusamus, modi eaque corrupti est soluta officia quam animi dolorum! Maiores hic reiciendis accusantium culpa eaque labore delectus itaque aliquam cumque a asperiores, neque veritatis optio quibusdam similique! Rem neque blanditiis nam optio itaque dignissimos ipsam. Nesciunt, assumenda sequi ea voluptates quaerat dolorum. Voluptatem saepe at tempora consectetur. Eligendi iusto consequatur non ab, suscipit veritatis omnis exercitationem architecto est laudantium ullam quasi accusantium blanditiis! Recusandae temporibus cum aliquid ea, esse dolorum!</p>
+            <!-- check now button -->
+            <div class="check-now-button">
+                <h3><a href="#">Check Now</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Now Section -->
+    <div class="contact-now-container">
+        <img src="assets/contact.png" alt="book over the hands" width="100%">
+        <!-- Creating form -->
+        <div class="contact-now">
+            <h3>Contact Now</h3>
+                <div class="contact-form">
+                    <div id="cont-modified" contentEditable=true data-text="Enter Name"></div>
+                    <div id="cont-modified" contentEditable=true data-text="Enter Email"></div>
+                    <div id="cont-modified" contentEditable=true data-text="Phone"></div>
+                    <div id="cont-modified" contentEditable=true data-text="Message"></div>
+                </div>   
+            <div class="submit-btn">
+                <h2><a href="#">Submit</a></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievement Section -->
+    <div class="achievement-container">
+        <!-- This is a svg icon of hundred + courses -->
+        <div class="achievement-arrangement">
+            <svg id="achievement-icon" xmlns="http://www.w3.org/2000/svg" width="92.501" height="105.715" viewBox="0 0 92.501 105.715">
+                <path id="Icon_awesome-book" data-name="Icon awesome-book" d="M92.5,74.331V4.955A4.944,4.944,0,0,0,87.545,0H19.822A19.827,19.827,0,0,0,0,19.822V85.894a19.827,19.827,0,0,0,19.822,19.822H87.545A4.944,4.944,0,0,0,92.5,100.76v-3.3A4.994,4.994,0,0,0,90.663,93.6c-.867-3.18-.867-12.244,0-15.424A4.921,4.921,0,0,0,92.5,74.331ZM26.429,27.668a1.242,1.242,0,0,1,1.239-1.239H71.44a1.242,1.242,0,0,1,1.239,1.239V31.8a1.242,1.242,0,0,1-1.239,1.239H27.668A1.242,1.242,0,0,1,26.429,31.8Zm0,13.214a1.242,1.242,0,0,1,1.239-1.239H71.44a1.242,1.242,0,0,1,1.239,1.239v4.129A1.242,1.242,0,0,1,71.44,46.25H27.668a1.242,1.242,0,0,1-1.239-1.239ZM78.749,92.5H19.822a6.607,6.607,0,0,1,0-13.214H78.749A74.333,74.333,0,0,0,78.749,92.5Z" fill="#fff"/>
+            </svg>
+            <div class="achievement-desc0">
+                <h3>100+ <br><span id="achievement-desc0">Courses</span></h3>
+            </div>  
+        </div>
+        
+        <!-- This is a svg icon of graduate hat -->
+        <div class="achievement-arrangement">
+            <svg id="achievement-icon" xmlns="http://www.w3.org/2000/svg" width="217.455" height="99.962" viewBox="0 0 217.455 99.962">
+                <path id="Icon_map-university" data-name="Icon map-university" d="M109.72,70.88c-24.564,0-45.433,7.143-59.064,18.339v20.824H168.793V89.219C155.162,78.023,134.288,70.88,109.72,70.88ZM218.184,60.193,109.433,10.08.729,60.193l18.12,8.292V81.24c-4.544.941-4.557,3.321-4.557,6.152a7.6,7.6,0,0,0,1.608,4.8L9.684,105.5H31.858L25.7,92.186a7.312,7.312,0,0,0,1.886-4.571c0-2.826-4.189-5.439-4.189-6.379V70.616L46.112,80.822v-.9c13.631-11.855,37.581-19.379,63.6-19.379s49.99,7.524,63.622,19.379v.9Z" transform="translate(-0.729 -10.08)" fill="#fff"/>
+            </svg>
+            <div class="achievement-desc1">
+                <h3>2000+ <br><span id="achievement-desc1">Students</span></h3>
+            </div>
+        </div>
+        
+        <!-- This is a svg icon of 350+ teachers -->
+        <div class="achievement-arrangement">
+            <svg id="achievement-icon" xmlns="http://www.w3.org/2000/svg" width="140" height="112" viewBox="0 0 140 112">
+                <path id="Icon_awesome-chalkboard-teacher" data-name="Icon awesome-chalkboard-teacher" d="M45.5,77a5,5,0,0,0-1.544.238A28.856,28.856,0,0,1,35,78.75a28.881,28.881,0,0,1-8.958-1.512A4.991,4.991,0,0,0,24.5,77,24.5,24.5,0,0,0,0,101.636,10.473,10.473,0,0,0,10.5,112h49A10.473,10.473,0,0,0,70,101.636,24.5,24.5,0,0,0,45.5,77ZM35,70A21,21,0,1,0,14,49,21,21,0,0,0,35,70ZM129.5,0h-84A10.69,10.69,0,0,0,35,10.848V21a27.682,27.682,0,0,1,14,3.894V14h77V77H112V63H84V77H67.323A27.88,27.88,0,0,1,76,91h53.5A10.69,10.69,0,0,0,140,80.152v-69.3A10.69,10.69,0,0,0,129.5,0Z" transform="translate(0)" fill="#fff"/>
+            </svg>
+            <div class="achievement-desc2">
+                <h3>350+ <br><span id="achievement-desc2">Teachers</span></h3>
+            </div>
+        </div>
+                 
+        <!-- This is a scg icon of award winings -->
+        <div class="achievement-arrangement">
+            <svg id="achievement-icon" xmlns="http://www.w3.org/2000/svg" width="83.999" height="112" viewBox="0 0 83.999 112">
+                <path id="Icon_awesome-award" data-name="Icon awesome-award" d="M21.245,79.325c-1.9-1.9-.91-1.365-5.495-2.592a15.782,15.782,0,0,1-5.563-2.914L.263,98.152a3.5,3.5,0,0,0,3.375,4.819l11.526-.44,7.927,8.374a3.5,3.5,0,0,0,5.781-1.085L40.258,81.9a15.7,15.7,0,0,1-19.013-2.579ZM83.736,98.152,73.812,73.819a15.747,15.747,0,0,1-5.563,2.914c-4.609,1.234-3.6.7-5.495,2.592A15.7,15.7,0,0,1,43.738,81.9L55.124,109.82a3.5,3.5,0,0,0,5.781,1.085l7.93-8.374,11.526.44a3.5,3.5,0,0,0,3.375-4.819ZM57.53,74.375c3.342-3.4,3.725-3.108,8.485-4.406a8.889,8.889,0,0,0,6.228-6.339c1.636-6.212,1.212-5.462,5.676-10.008A9.074,9.074,0,0,0,80.2,44.964c-1.634-6.208-1.636-5.342,0-11.556A9.074,9.074,0,0,0,77.92,24.75c-4.465-4.546-4.04-3.8-5.676-10.008A8.889,8.889,0,0,0,66.016,8.4c-6.1-1.665-5.364-1.229-9.833-5.777A8.7,8.7,0,0,0,47.676.305c-6.1,1.662-5.246,1.665-11.353,0a8.7,8.7,0,0,0-8.507,2.321c-4.465,4.546-3.73,4.112-9.83,5.777a8.889,8.889,0,0,0-6.228,6.339c-1.634,6.21-1.212,5.462-5.676,10.008A9.069,9.069,0,0,0,3.8,33.408c1.634,6.2,1.636,5.337,0,11.554a9.08,9.08,0,0,0,2.279,8.66c4.465,4.546,4.04,3.8,5.676,10.008a8.889,8.889,0,0,0,6.228,6.339c4.9,1.334,5.261,1.124,8.483,4.406a8.693,8.693,0,0,0,10.88,1.273,8.679,8.679,0,0,1,9.3,0A8.691,8.691,0,0,0,57.53,74.375ZM21.363,38.492A20.64,20.64,0,1,1,42,59.5,20.823,20.823,0,0,1,21.363,38.492Z" transform="translate(0 0)" fill="#fff"/>
+            </svg>
+            <div class="achievement-desc3">
+                <h3>80+ <br><span  id="achievement-desc3">Award Wining</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="event-container" id="events">
+        <div class="event-title">
+            <h3>Events</h3>
+            <div class="events-desc">
+                <p>Events of Our University</p>
+            </div>
+        </div>
+        <div class="events-picturized">
+            <div class="left-events">
+                <div class="top">
+                    <img src="assets/music-day.png" alt="The music day">
+                </div>
+                <div class="button">
+                    <h4>The Music Day</h4>
+                    <p>Happy Music Day</p>
+                    <div class="calendar">
+                        <div class="calendar-icon">
+                            <a href="#"><img src="assets/calendar-icon.png" alt="This is a calendar icon"></a>
+                            <p>November 5, 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-events">
+                <div class="top">
+                    <img src="assets/passout-day.png" alt="The passout day">
+                </div>
+                <div class="button">
+                    <h4>Passout Day</h4>
+                    <p>Happy Completion Day</p>
+                    <div class="calendar">
+                        <div class="calendar-icon">
+                            <a href="#"><img src="assets/calendar-icon.png" alt="This is a calendar icon"></a>
+                            <p>December 28, 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-events">
+                <div class="top">
+                    <img src="assets/color-day.png" alt="The color day">
+                </div>
+                <div class="button">
+                    <h4>The Festival Of Color</h4>
+                    <p>Happy Colors Day</p>
+                    <div class="calendar">
+                        <div class="calendar-icon">
+                            <a href="#"><img src="assets/calendar-icon.png" alt="This is a calendar icon"></a>
+                            <p>July 15, 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="mission-container">
+        <img src="assets/mission.png" alt="The roadway image of mission">
+        <div class="mission-desc">
+            <h2>Our Mission</h2>
+            <h3>Make your study journey awesome <br><span id="with">with</span><br><span id="guarantee">Guaranteed Quality Education</span></h3>
+        </div>
+    </div>
+
+    <!-- Founder Section -->
+    <div class="founder-container">
+        <div class="founder-title">
+            <h3>Founder</h3>
+            <p>We are the founder of this university</p>
+        </div>
+        <div class="founder-picturized">
+            <div class="left-founder">
+                <img src="assets/bikal.png" alt="image of founder: bikal">
+                <div class="founder-desc" id="left-founder">
+                    <a href="http://bikaldhimal.com.np">
+                        <h3>Bikal</h3>
+                        <p id="manager">Manager</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mid-founder">
+                <img src="assets/laila.png" alt="image of founder: laila">
+                <div class="founder-desc" id="mid-founder">
+                    <a href="#">
+                        <h3>Laila</h3>
+                        <p id="ceo">CEO</p>
+                    </a>
+                </div>
+            </div>
+            <div class="right-founder">
+                <img src="assets/Johnny.png" alt="image of founder: johnny">
+                <div class="founder-desc" id="right-founder">
+                    <a href="#">
+                        <h3>Johnny</h3>
+                        <p id="principal">Principal</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Section -->
+    <div class="review-container">
+        <div class="review-title">
+            <h3>Review</h3>
+            <p>Check out university reviews from students & guardians</p>
+        </div>
+        <div class="review-picturized">
+            <div class="left-review">
+                <div class="review-image">
+                    <img src="assets/samantha.png" alt="a picture of student">
+                </div>
+                <div class="review-name">
+                    <h3 id="samantha">Samantha</h3>
+                    <h4 id="firstStudent">Student</h4>
+                </div>
+                <div class="review-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dicta dolorem eveniet non placeat ex architecto odit! Beatae ducimus quisquam magnam voluptas, odit nulla, deserunt ab distinctio delectus illo ex? Laborum, quis placeat? Sint, ipsa dolor, at nisi, veritatis saepe enim non sed voluptatibus dignissimos est veniam repudiandae incidunt quo.</p>
+                </div>
+            </div>
+            <div class="mid-review">
+                <div class="review-image">
+                    <img src="assets/lucifer.png" alt="a picture of student">
+                </div>
+                <div class="review-name">
+                    <h3 id="lucifer">Lucifer</h3>
+                    <h4 id="secondParent">Parent</h4>
+                </div>
+                <div class="review-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dicta dolorem eveniet non placeat ex architecto odit! Beatae ducimus quisquam magnam voluptas, odit nulla, deserunt ab distinctio delectus illo ex? Laborum, quis placeat? Sint, ipsa dolor, at nisi, veritatis saepe enim non sed voluptatibus dignissimos est veniam repudiandae incidunt quo.</p>
+                </div>
+            </div>
+            <div class="right-review">
+                <div class="review-image">
+                    <img src="assets/blake.png" alt="a picture of student">
+                </div>
+                <div class="review-name">
+                    <h3 id="blake">Blake</h3>
+                    <h4 id="thirdStudent">Student</h4>
+                </div>
+                <div class="review-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dicta dolorem eveniet non placeat ex architecto odit! Beatae ducimus quisquam magnam voluptas, odit nulla, deserunt ab distinctio delectus illo ex? Laborum, quis placeat? Sint, ipsa dolor, at nisi, veritatis saepe enim non sed voluptatibus dignissimos est veniam repudiandae incidunt quo.</p>
+                </div>
+            </div>
+            <!-- Carousel -->
+            <div class="sliding-carousel">
+    
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <!-- Upper footer -->
+        <div class="upper-footer">
+            <div class="left-footer">
+                <img src="assets/londonmetro_icon.png" alt="The london metropolitan icon">
+            </div>
+            <div class="mid-footer">
+                <!-- top part -->
+                <div class="top-middle-footer">
+                    <h1>THE LONDON METROPOLITAN UNIVERSITY</h1>
+                    <div class="top-footer-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum impedit obcaecati nam reprehenderit amet tenetur laborum iusto ratione labore eaque. Ab sunt culpa, ipsam ex quod rerum quis dolores odit!</p>
+                        <div class="social-icons">
+                            <ul>
+                                <a href="https://www.facebook.com/Simaldonge/"><img id="facebook" src="assets/facebook.png" alt="facebook icon"></a>
+                                <a href="https://www.instagram.com/bikal.official/"><img id="instagram" src="assets/instagram.png" alt="instagram icon"></a>
+                                <a href="https://www.linkedin.com/in/bikal-dhimal-705957154/"><img id="linkedin" src="assets/linkedin.png" alt="linkedin icon"></a>
+                                <a href="#"><img id="google-plus" src="assets/google_plus.png" alt="google_plusicon"></a>
+                                <a href="https://twitter.com/bikaldhimal2016"><img id="twitter" src="assets/twitter.png" alt="twitter icon"></a>
+                            </ul>    
+                        </div>
+                    </div>
+                </div>
+                <!-- center part -->
+                <div class="center-middle-footer">
+                    <h1>Contact Info</h1>
+                    <div class="first-contact">
+                        <a href="https://www.google.com/maps/dir/26.666866,87.3909946/london+metropolitan+university/@33.2608211,7.4245892,3z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4876034d3f63ca23:0xc3805ee7b65e34c7!2m2!1d-0.1113049!2d51.5526146"><img src="assets/location.png" alt="location icon"></a>
+                        <p>166-220 Holloway Rd, London N7 8DB, United Kingdom</p>
+                    </div>
+                    <div class="second-contact">
+                        <a href="#"><img id="message-icon" src="assets/message.png" alt="message help desk"></a>
+                        <p id="help-desk">help@my.londonmet.ac.uk</p>
+                    </div>
+                    <div class="third-contact">
+                        <a href="#"><img src="assets/call.png" alt="call icon"></a>
+                        <p id="number">+977 981-431-2920</p>
+                    </div>
+                </div>
+                <!-- button part -->
+                <div class="button-middle-footer">
+                    <h1 id="enrollment">Enter Your Enrollment No.</h1>
+                    <div class="text-box" style="color: #000;font-family: 'poppins'; font-weight: 200; font-size: 24px; text-align: center; padding-top: 10px;" contentEditable=true data-text="Enter Enrollment No.">
+    
+                    </div>
+                    <div class="check-status">
+                        <a href="#"><h4>Check Status</h4></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-footer">
+                <h1>Useful Links</h1>
+                <a href="#">
+                    <h4 id="fee-payment">Fee Payment</h4>
+                </a>
+                <a href="#">
+                    <h4 id="university-gallery">University Gallery</h4>
+                </a>
+                <a href="#">
+                    <h4 id="contact-us">Contact Us</h4>
+                </a>
+            </div>
+        </div>
+        <!-- Horizontal line -->
+        <div class="horizontal-line">
+
+        </div>
+        <!-- Lower footer -->
+        <div class="lower-footer">
+            <div class="left-lower-footer">
+                <a href="#"><p>Copyright @ 2021 All Right Reservered</p></a>
+            </div>
+            <div class="right-lower-footer">
+                <a href="#"><p>Privacy Policy | Terms & Condition</p></a>
+                <a href="#"><img src="assets/arrow-upwar.png" alt="arrow for scrolling upward direction"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
